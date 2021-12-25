@@ -36,7 +36,7 @@ export function PasswordVerify() {
         },
       })
       .then((res) => {
-        toast.success(res.data.message)
+        toast.success(res.data.message);
       })
       .catch((err) => {
         toast.error(err.response.data.message);
@@ -63,7 +63,7 @@ export function PasswordVerify() {
       .post(`${URL}/user/change-password`, newPassword)
       .then((res) => {
         toast.success(res.data.message);
-        history.push("/passwordchangedsuccessfully")
+        history.push("/passwordchangedsuccessfully");
       })
       .catch((err) => {
         toast.error(err.response.data.message);

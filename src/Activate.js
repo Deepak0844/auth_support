@@ -23,7 +23,6 @@ export function Activate() {
         title="Congratulations"
         subTitle="Your account has been activated successfully."
       />
-
     </div>
   );
 }
