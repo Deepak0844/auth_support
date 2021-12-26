@@ -7,7 +7,7 @@ import TextField from "@mui/material/TextField";
 import { useParams, useHistory } from "react-router-dom";
 import { useEffect } from "react";
 
-const URL = "http://localhost:9000";
+
 
 const formValidationSchema = yup.object({
   password: yup
@@ -30,7 +30,7 @@ export function PasswordVerify() {
   const { token } = useParams();
   useEffect(() => {
     axios
-      .get(`${URL}/user/forgot-password/verify`, {
+      .get(`http://localhost:9000/user/forgot-password/verify`, {
         headers: {
           "x-auth-token": token,
         },

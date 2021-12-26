@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        <Route exact path="/"></Route>
+        <Route exact path="/">hello</Route>
         <Route
           exact
           path="/forgot-password/verify/:token"
