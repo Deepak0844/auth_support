@@ -1,6 +1,6 @@
 import "./App.css";
 import { PasswordVerify } from "./resetPassword";
-import { Switch, Route, Redirect } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import { Activate } from "./Activate";
 import {PassChanged} from './passwordChanged';
 import 'antd/dist/antd.css';
