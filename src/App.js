@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <Switch>
         <Route exact path="/">
-          <Redirect to="/forgot-password/verify/:token"/>
+home
         </Route>
         <Route
           exact
