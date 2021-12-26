@@ -1,6 +1,6 @@
 import "./App.css";
 import { PasswordVerify } from "./resetPassword";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route,Redirect } from "react-router-dom";
 import { Activate } from "./Activate";
 import {PassChanged} from './passwordChanged';
 import 'antd/dist/antd.css';
@@ -8,7 +8,9 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        <Route exact path="/">hello</Route>
+        <Route exact path="/">
+          <Redirect to="/forgot-password/verify/:token"/>
+        </Route>
         <Route
           exact
           path="/forgot-password/verify/:token"

@@ -60,7 +60,7 @@ export function PasswordVerify() {
     console.log(newPassword);
 
     axios
-      .post(`${URL}/user/change-password`, newPassword)
+      .post(`http://localhost:9000/user/change-password`, newPassword)
       .then((res) => {
         toast.success(res.data.message);
         history.push("/passwordchangedsuccessfully");
